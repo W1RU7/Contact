@@ -9,18 +9,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	
+	<script src="wow.min.js"></script>
 	<script>
 	new WOW().init();
 	</script>
 </head>
 <body>
-<header class="header wow animate__animated animate__fadeInDown">
+<header class="header">
 	<div class="container">
 		<div class="header__wrapper" >
 			<div class="header__block">
 				<div class="logo">
-					<img src="img/logo.svg" alt="">
+					<a href="../index.html"><img src="img/logo.svg" alt=""></a>
 				</div>
 							<div class="dropdown">
 									<button onclick="myFunction()" class="dropbtn">
@@ -81,7 +81,7 @@
 									<div class="wrapper__block-side-bar-link-burger">
 										<div class="block__link-sidebar-nav">
 											<a class="nav__link" href="#">Blog</a>
-												<a class="nav__link" href="https://w1ru7.github.io/imageselect/">Home</a>
+												<a class="nav__link" href="../index.html">Home</a>
 											</div>
 										<div class="block__link-sidebar-burger">
 										<div class="block__link__cart">
@@ -136,11 +136,11 @@
 		</div><!-- header__wrapper -->
 	</div><!-- container --><!-- header -->
 </header><!-- header -->
-<section class="intro wow animate__animated animate__fadeIn">
+<section class="intro">
 	<div class="container">
 		<div class="intro__wrapper">
 			<div class="intro__block">
-				<form class="form wow animate__animated animate__fadeInDown" action="" method="get">
+				<form class="form " action="" method="get">
   					<input class="input" name="s" placeholder="Pleace use English keywords" type="search">
   						<button class="button__search" type="submit">
   							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,7 @@
 							</svg>
 						</button>
 				</form>
-				<div class="search wow animate__animated animate__fadeInDown">
+				<div class="search">
 					<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M7.50276 15.9986C5.76919 15.9986 4.03562 16.0019 2.30205 15.9986C0.980794 15.992 0.00312355 14.9682 0 13.5844C0 11.0035 0 8.42575 0.00312355 5.84804C0.00624709 4.45451 0.983917 3.43717 2.31767 3.4339C2.70187 3.4339 3.08919 3.43063 3.47338 3.4339C3.69828 3.4339 3.88882 3.35539 4.04812 3.18856C4.25427 2.97266 4.46042 2.75676 4.66658 2.54086C5.09763 2.10252 5.61301 1.87026 6.21273 1.86372C7.13418 1.85391 8.05563 1.85718 8.97707 1.86045C9.33941 1.86045 9.62677 2.08616 9.71735 2.4231C9.80794 2.75676 9.69549 3.12313 9.41125 3.29324C9.27693 3.37502 9.10826 3.42408 8.95521 3.42408C8.08062 3.43717 7.20602 3.4339 6.33143 3.42735C6.06593 3.42408 5.84416 3.50913 5.66299 3.71522C5.48495 3.91476 5.29754 4.10122 5.11325 4.29422C4.66346 4.762 4.11683 4.99426 3.48275 5.0008C3.08606 5.00407 2.6925 5.0008 2.29581 5.0008C1.8179 5.00407 1.50243 5.33446 1.50243 5.83496C1.50243 8.41266 1.50243 10.9936 1.50243 13.5713C1.50243 14.098 1.80853 14.4186 2.3083 14.4186C5.35376 14.4219 8.39922 14.4186 11.4447 14.4219C11.857 14.4219 12.2662 14.4251 12.6785 14.4219C13.1907 14.4186 13.4937 14.1013 13.4937 13.5648C13.4937 11.782 13.4937 9.9992 13.4937 8.21639C13.4937 7.90563 13.5874 7.6472 13.8467 7.4771C14.0872 7.32008 14.3402 7.307 14.5901 7.44439C14.8462 7.58505 14.993 7.81076 14.993 8.11499C14.9961 9.98938 15.0086 11.8671 14.9899 13.7415C14.9774 14.9518 13.9935 15.9626 12.8253 15.9855C11.8726 16.0051 10.9199 15.992 9.96724 15.992C9.14575 15.9986 8.32425 15.9986 7.50276 15.9986Z" fill="#858585"/>
 						<path d="M7.49687 13.4285C5.42812 13.4253 3.75 11.6992 3.75 9.57137C3.75 7.44352 5.43125 5.71423 7.49687 5.71423C9.575 5.71423 11.2531 7.44673 11.25 9.58102C11.2469 11.7121 9.56875 13.4317 7.49687 13.4285ZM5.25312 9.5778C5.25625 10.8539 6.26562 11.8889 7.50312 11.8857C8.75312 11.8824 9.75312 10.8474 9.75 9.55852C9.74687 8.28566 8.7375 7.25709 7.49375 7.2603C6.25312 7.26352 5.25 8.29852 5.25312 9.5778Z" fill="#858585"/>
@@ -175,7 +175,7 @@
 		<div class="container">
 			<div class="contacts-wrapper">
 				<div class="contacts-block">
-					<h1 class="intro-title wow animate__animated animate__fadeInDown">
+					<h1 class="intro-title">
 						Contact us
 					</h1>
 					<img src="img/1.jpg" alt="" class="img-contact wow animate__animated animate__fadeInLeft">
